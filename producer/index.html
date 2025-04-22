@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js HTML Page</title>
+</head>
+<body>
+    <h1>Welcome to My Node.js Application</h1>
+    <p>This is a simple HTML page served from a Node.js app.</p>
+
+    <!-- Form to submit -->
+    <form action="/submit" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="result">
+        <h3>Form Submitted Successfully!</h3>
+        <p id="resultName"></p>
+        <p id="resultEmail"></p>
+    </div>
+
+</body>
+</html>
